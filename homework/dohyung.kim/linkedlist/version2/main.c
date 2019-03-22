@@ -50,13 +50,11 @@ int main(){
 	while(fgets(buf,MAX,fp) != NULL){  //  == while(fgets(buf,MAX,fp))
 		if(++i == 0) // 첫줄은 무시한다. if문은 모든 i가 들어가므로 i를 +1하는 기능도 있다.    	     
 			continue;
-
 		//1     
 		// strlen 사용하여 \n 값 없애기.
 		int len = strlen(buf);
-		if(buf[len -1] == '\n')
+		if(buf[len -1] == '\n') //hello'\n' 
 			buf[len -1] = '\0';
-		//printf("%s\n", buf); 
 		car = make_Car(buf);
 		if (car == NULL)
 			continue;
@@ -64,7 +62,7 @@ int main(){
 	}
 
 	i -= 1; // 첫줄 빼기
-	//print_list(&head);
+	print_list(&head);
 
 	int flag =0;
 
@@ -111,7 +109,6 @@ int main(){
 				printf("1. 오름차순 정렬 \n");
 				printf("2. 내림차순 정렬 \n");
 				printf("선택 > ");
-				scanf("%d",&sel_flow);
 
 				count=filter(car,&head,sel_type,sel_info,sel_flow);
 
