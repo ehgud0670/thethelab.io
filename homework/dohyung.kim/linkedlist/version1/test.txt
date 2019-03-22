@@ -1,0 +1,59 @@
+|No|  Name                 | kind | retail_price | dealer_cost | engine_size | weight | width |
+1   Hummer H2                                SUV             49995   45815   6.000000 6400 81 
+2   GMC Yukon XL 2500 SLT                    SUV             46265   40534   6.000000 6133 79 
+3   Nissan Pathfinder Armada SE              SUV             33840   30815   5.600000 5013 79 
+4   Lincoln Navigator Luxury                 SUV             52775   46360   5.400000 5969 80 
+5   Chevrolet Tahoe LT                       SUV             41465   36287   5.300000 5050 79 
+6   Chevrolet Suburban 1500 LT               SUV             42735   37422   5.300000 4947 79 
+7   Cadillac Escaladet                       SUV             52795   48377   5.300000 5367 79 
+8   Mercedes-Benz ML500                      SUV             46470   43268   5.000000 4874 72 
+9   Mercedes-Benz G500                       SUV             76870   71540   5.000000 5423 71 
+10  CMC Yukon 1500 SLE                       SUV             35725   31361   4.800000 5042 79 
+11  Toyota Sequoia SR5                       SUV             35695   31827   4.700000 5270 78 
+12  Toyota Land Cruiser                      SUV             54765   47986   4.700000 5390 76 
+13  Lexus LX 470                             SUV             64800   56455   4.700000 5590 76 
+14  Lexus GX 470                             SUV             45700   39838   4.700000 4740 74 
+15  Dodge Durango SLT                        SUV             32235   29472   4.700000 4987 76 
+16  Lincoln Aviator Ultimate                 SUV             42915   39443   4.600000 4834 76 
+17  Land Rover Discovery SE                  SUV             39250   35777   4.600000 4576 74 
+18  Ford Expedition 4.6 XLT                  SUV             34560   30468   4.600000 5000 79 
+19  Cadillac SRX V8                          SUV             46995   43523   4.600000 4302 73 
+20  Porsche Cayenne S                        SUV             56665   49865   4.500000 4950 76 
+21  Land Rover Range Rover HSE               SUV             72250   65807   4.400000 5379 76 
+22  BMW X5 4.4i                              SUV             52195   47720   4.400000 4824 74 
+23  Isuzu Ascender S                         SUV             31849   29977   4.200000 4967 76 
+24  Chevrolet TrailBlazer LT                 SUV             30295   27479   4.200000 4425 75 
+25  Buick Rainier                            SUV             37895   34357   4.200000 4600 75 
+26  Toyota 4Runner SR5 V6                    SUV             27710   24801   4.000000 4035 74 
+27  Mercury Mountaineer                      SUV             29995   27317   4.000000 4374 72 
+28  Jeep Grand Cherokee Laredo               SUV             27905   25686   4.000000 3790 72 
+29  Ford Explorer XLT V6                     SUV             29670   26983   4.000000 4463 72 
+30  Mitsubishi Montero XLS                   SUV             33112   30763   3.800000 4718 75 
+31  Mitsubishi Endeavor XLS                  SUV             30492   28330   3.800000 4134 74 
+32  Nissan Pathfinder SE                     SUV             27339   25972   3.500000 3871 72 
+33  Kia Sorento LX                           SUV             19635   18630   3.500000 4112 73 
+34  Honda Pilot LX                           SUV             27560   24843   3.500000 4387 77 
+35  Acura MDX                                SUV             36945   33337   3.500000 4451 77 
+36  Pontiac Aztekt                           SUV             21595   19810   3.400000 3779 74 
+37  Buick Rendezvous CX                      SUV             26545   24085   3.400000 4024 74 
+38  Toyota Highlander V6                     SUV             27930   24915   3.300000 3935 72 
+39  Nissan Xterra XE V6                      SUV             20939   19512   3.300000 3760 70 
+40  Lexus RX 330                             SUV             39195   34576   3.300000 4065 73 
+41  Volkswagen Touareg V6                    SUV             35515   32243   3.200000 5086 76 
+42  Isuzu Rodeo S                            SUV             20449   19261   3.200000 3836 70 
+43  Ford Escape XLS                          SUV             22515   20907   3.000000 3346 70 
+44  BMW X3 3.0i                              SUV             37000   33873   3.000000 4023 73 
+45  Volvo XC90 T6                            SUV             41250   38851   2.900000 4638 75 
+46  Suzuki XL-7 EX                           SUV             23699   22307   2.700000 3682 70 
+47  Hyundai Santa Fe GLS                     SUV             21589   20201   2.700000 3549 73 
+48  Suzuki Vitara LX                         SUV             17163   16949   2.500000 3020 67 
+49  Land Rover Freelander SE                 SUV             25995   23969   2.500000 3577 71 
+50  Chevrolet Tracker                        SUV             20255   19108   2.500000 2866 67 
+51  Toyota RAV4                              SUV             20290   18553   2.400000 3119 68 
+52  Mitsubishi Outlander LS                  SUV             18892   17569   2.400000 3240 69 
+53  Jeep Liberty Sport                       SUV             20130   18973   2.400000 3826 72 
+54  Honda Element LX                         SUV             18690   17334   2.400000 3468 72 
+55  Honda CR-V LX                            SUV             19860   18419   2.400000 3258 70 
+56  Saturn VUE                               SUV             20585   19238   2.200000 3381 72 
+57  Mazda Tribute DX 2.0                     SUV             21087   19742   2.000000 3091 72 
+
