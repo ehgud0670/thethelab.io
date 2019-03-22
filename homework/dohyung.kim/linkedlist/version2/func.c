@@ -71,13 +71,13 @@ void check_type(Car *car,char **type1,char **type2){
 
 void print_list(struct node *head) {
 	struct node *current = head->next;
-
+  char *type1;
+  char *type2;
+	
 	system("clear");
 
 	printf("<head> ");
 	while (current != head) {
-		char *type1;
-		char *type2;
 
 		Car *car = list_entry(current, Car, links);
 		check_type(car, &type1, &type2);
@@ -85,11 +85,11 @@ void print_list(struct node *head) {
 		printf(" -> [%s, %s, %s]\n", car->name, type1, type2);
 		current = current->next;
 
-		free(type1);
-		free(type2);
 
 		getchar();
 	}
+	free(type1);
+	free(type2);
 
 }
 

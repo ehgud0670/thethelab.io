@@ -62,8 +62,8 @@ int main(){
 	}
 
 	i -= 1; // 첫줄 빼기
-	print_list(&head);
-
+//	print_list(&head);
+ 
 	int flag =0;
 
   printf("(총 %d의 데이터가 로드되었습니다.) \n",i);
@@ -109,7 +109,7 @@ int main(){
 				printf("1. 오름차순 정렬 \n");
 				printf("2. 내림차순 정렬 \n");
 				printf("선택 > ");
-
+        scanf("%d",&sel_flow);
 				count=filter(car,&head,sel_type,sel_info,sel_flow);
 
 				printf("파일로 저장하시겠습니까? \n");
