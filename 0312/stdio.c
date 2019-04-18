@@ -57,7 +57,7 @@ int main() {
 // 버퍼링 정책
 //   1. 풀 버퍼링 - 버퍼가 가득차면, 비운다.
 //     => 일반 파일
-//   2. 라인 버퍼링 - 엔터('\n')가 나오거나, 버퍼가 가득차면 비운다.
+//   2. 라인 버퍼링 - 엔터('\n')가 나오거나, 버퍼가 가득차면 비운다.또 같은 프로그램에서 출력 모드에서 입력모드로 변경될때 fflush()가 작용해 출력된다. 
 //     => stdout, stdin
 //   3. 노 버퍼링  - 버퍼링을 하지 않는다.
 //     => stderr
@@ -69,44 +69,11 @@ int main() {
 #include <unistd.h>
 
 int main() {
-	// FILE* fp = fopen("a.txt", "w");
-	printf("hello");
-	// fprintf(fp, "hello");
+	 FILE* fp = fopen("a.txt", "w");
+	 printf("hello");
+	 fprintf(fp ,"hello");
 
 	sleep(3);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
