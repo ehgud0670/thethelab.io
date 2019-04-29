@@ -8,7 +8,7 @@ public class SumThread extends Thread {
 	private static void sum() {
 
 		int local = 0;
-		for (int i = 0; i < 2100000000 / Project.getThread_count(); i++) {
+		for (int i = 0; i < 1000000000 / Project.getThreadCount(); i++) {
 			++local;
 		}
 		synchronized (SumThread.class) {
