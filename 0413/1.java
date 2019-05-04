@@ -11,6 +11,25 @@
 
 // Spring Framework
 
+/*
+class Car{
+  void go(){}
+  
+  @Test
+  void foo(){
+    
+    System.out.println("foo begin");
+    
+    System.out.println("foo end");
+  }
+}
+
+class Truck extends Car{
+  //Override
+  void go2(){}
+}
+
+*/
 
 // * 빌더 패턴
 // 객체 생성의 공정은 동일하지만, 다른 표현을 가지는 객체를 생성할 때, 사용하는 패턴
@@ -192,5 +211,92 @@ class User {
     public void setAge(int age) {
         this.age = age;
 		}
+		
+    public void setAddress(String address){
+        this.address = address;
+    }
+    
+    public void setLevel(int level){
+        this.level = level;
+    }
+    
+    public void setMoney(int money){
+        this.money = money;
+    }
+  
 }
+
+class Program{
+  public static void main(String[] args){
+    String a = "Tom";
+    int b = 42;
+    String c = "Suwon";
+    int d = 100;
+    int e = 1000;
+    
+    // 1. 객체 일관성이 깨질 위험이 있다. 
+    // => 생성과 초기화가 분리됨으로써,
+    // 초기화가 아직 완전하지 않은 객체를 관리해야 한다.
+    // 2. 불변 객체도 사용할 수 없다.
+    // 3. 스레드 이슈.
+    User user = new User();
+    user.setName(a);
+    user.setAge(b);
+    //--------------
+    
+    user.setAddress(c);
+    user.setLevel(d);
+    user.setMoney(e);
+  
+  }
+
+}
+
 /*
+
+/*
+class User{
+  private final String name;
+  private final int age;
+  
+  private String address;
+  private int level;
+  private int money;
+  
+  // 1.생성자 오버로딩을 통해 다양한 생성방법을 제공한다. 
+  // => 텔레스코핑(점층적) 생성자 패턴
+  User(String name, int age, String address, int level, int money){
+    this.name = name;
+    this.age = age;
+    this.address = address;
+    this.level = level;
+    this.money = money;
+  }
+  
+  User(String name , int age, String address, int level){
+    this(name, age, address, level, 0);
+  }
+  User(String name , int age, String address){
+    this(name, age, address , 0,0 );
+  }
+  User(String name , int age){
+    this(name, age, "", 0,0);
+  }
+}
+class Program{
+  public static void main(String[] args){
+    String a = "Tom";
+    int b = 42;
+    String c = "Suwon";
+    int d = 100;
+    int e = 1000;
+    
+    User user = new User(a,b,c,d,e);
+    // 1.가독성이 떨어진다. 
+    
+    // 2. 인자를 잘못 전달할 수 있다. 
+    user = new User(c,b,a,e,d);
+  }
+ 
+}
+*/
