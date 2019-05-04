@@ -1,4 +1,0 @@
-hello 10
-hello 20
-ok 30
-show 40
