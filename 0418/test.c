@@ -8,8 +8,8 @@ void foo(int signum) {
 	printf("자식 죽음...\n");
 	printf("sigchld: %d \n", signum);
 	int status;
-	wait(&status);
-	printf("status: %d\n", status);
+	while(wait(&status)>0)
+	  printf("status: %d\n", status);
 }
 
 int main() {

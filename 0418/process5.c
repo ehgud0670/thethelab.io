@@ -8,23 +8,23 @@
 //  => 시그널 핸들러 안에서는 절대 블록되는 함수를 호출하면 안된다.
 //   : 시그널 핸들러안에서 블록되면, 시그널 핸들러를 호출한 프로세스가 대기하게 된다.
 
-#if 0
+
 void foo(int signum) {
 	int status;
 	while (waitpid(0, &status, WNOHANG) > 0) {
 		printf("status: %d\n", status);
 	}
 }
-#endif
 
 
+#if 0
 void foo(int signum) {
 	int status;
-	while (wait(&status) > 0) { //wait은 블록킹 함수이다.   
+	while (wait(&status) > 0) {
 		printf("status: %d\n", status);
 	}
 }
-
+#endif
 
 int main() {
 	signal(SIGCHLD, foo);
@@ -36,7 +36,7 @@ int main() {
 		if (pid == 0) { 
 			for (i = 0; i < 3; ++i) {
 				printf("child process..\n");
-					if(j>5){
+				  if(j>5){
 					sleep(1);
 					}
 			}
@@ -48,6 +48,6 @@ int main() {
 		sleep(1);
 	}
 	exit(0);
- 
+
 }
 
