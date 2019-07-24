@@ -10,7 +10,6 @@ void *on_client(void *arg){
   
   intptr_t sock = (intptr_t)arg;
 
-
   char buf[128];
   int ret;
   while(1){
