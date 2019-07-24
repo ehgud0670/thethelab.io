@@ -8,7 +8,7 @@
 #include <unistd.h>
 
 # define PCOUNT 1024
-int n=0;
+int n = 0;
 int clients[PCOUNT];
 
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
@@ -34,7 +34,7 @@ void *on_client(void *arg){
   while(1){
     char buf[128];
     int ret = read(sock, buf, sizeof buf);
-    if(ret<=0){
+    if(ret <= 0){
       break;
 		}
 
@@ -54,7 +54,6 @@ void *on_client(void *arg){
   pthread_mutex_unlock(&mutex);
   
   close(sock);
-  return 0;
 }
 
 int main(){
