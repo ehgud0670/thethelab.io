@@ -22,10 +22,10 @@ int main(){
     perror("connect");
     return 1;
 	}
-// stdin 0   number is file desciptor
+// stdin 0   
 // stdout 1
 // stderr 2
-
+// number is file descriptor
 	char buf[128];
 	while(1){
     int ret = read(0, buf, sizeof buf);
