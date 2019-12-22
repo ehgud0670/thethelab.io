@@ -28,7 +28,7 @@ void qsort(void *base, size_t nmemb, size_t size,
 //   void*: offset 정보가 없다.
 //    arr + size * i
 
-void bsort(void *arr, size_t n, size_t size, 
+void selection_sort(void *arr, size_t n, size_t size, 
 	int (*compare)(const void *, const void *)) {
 
 	int i, j;
@@ -48,7 +48,7 @@ int compare1(const void *a, const void *b) {
 int main() {
 	int i;
 	int arr[10] = { 1, 3, 5, 7, 9, 2, 4, 6, 8, 10 };
-	qsort(arr, 10, sizeof(arr[0]), compare1);
+	selection_sort(arr, 10, sizeof(arr[0]), compare1);
 
 	for (i = 0; i < 10; ++i) {
 		printf("%d\n", arr[i]);
